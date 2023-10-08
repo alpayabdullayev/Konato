@@ -1,0 +1,117 @@
+@use '../abstracts/variable' as *;
+
+
+header{
+    img{
+        max-width: 100%;
+    }
+    nav{
+        background-color: $color1;
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99999;
+        .top-nav{
+            display: flex;
+            justify-content: space-between ;
+            align-items: center;
+            a{
+                color: $colorWhite;
+            }
+            .top-navLeft{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .navbar-navs{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    a{
+                        position: relative;
+                        text-align: center;
+                        font-size: 18px;
+                        transition: transform .5s ease;
+                    }
+                    a:hover{
+                        color: $colorInfo;
+                        transition: transform .5s ease;
+                    }
+                    a::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: -10px;
+                        width: 100%;
+                        height: 2px;
+                        background-color: $colorInfo;
+                        color: $colorInfo;
+                        transform: scaleX(0);
+                        transition: transform .5s ease;
+                        transform-origin: right;
+                    }
+                    a:hover::before{
+                        transform-origin: left;
+                        transform: scaleX(1);
+                        color: $colorInfo;
+                    }
+                } 
+                
+            }
+            .top-navRight{
+                font-size: 18px;
+                span {
+                  color: $colorWhite;
+                  border-bottom: 1px dashed #fff;
+                  padding-bottom: 5px;
+                  font-size: 16px;
+                }
+                
+
+              }
+            
+        }
+    }
+    .bottom-nav{
+        background-color: $colorWhite;
+        padding: 15px 0;
+        margin-top: 70px;
+      
+        .search-form {
+          .search-input {
+            position: relative;
+      
+            input {
+              width: 100%;
+              height: 50px;
+              padding: 9px 18px 9px 48px;
+              color: $color5e;
+              font-size: 15px;
+              font-weight: 400;
+              border: 1px solid $colorBorder;
+              border-radius: 4px;
+            }
+            input:focus{
+                outline: 0;
+            }
+            .search-icon {
+              position: absolute;
+              left: 25px;
+              top: 18px;
+              
+            }
+
+          }
+
+          .select-form{
+            select{
+                padding-left: 10px;
+                padding: 10px;
+            }
+            
+          }
+        }
+      }
+      
+}

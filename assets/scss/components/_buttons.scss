@@ -1,0 +1,58 @@
+@use '../abstracts/variable' as *;
+.page-btn{
+    padding: 12px 23px;
+    border-radius: 8px;
+    color: $colorInfo;
+    transition: all .3s ease;
+    background-color: $colorInfo;
+    border: 1px solid $color1;
+
+
+    &:hover{
+        background: none;
+        border: 1px solid $color000;
+        transition: all .3s ease;
+        border-radius: 8px;
+    }
+
+    &.search{
+        border: 0;
+        background-color: $color1;
+        border-radius: 8px;
+        color: $colorWhite;
+        &.search:hover{
+            background-color: $colorInfo;
+        }
+    }
+
+    &.left-to-right {
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        color: $colorWhite;
+        border: none;
+        border-radius: 8px;
+        &:hover::before {
+          transform: scaleX(1);
+          z-index: -1;
+          border: none;
+          border-radius: 8px;
+          min-width: 100%;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          min-height: 48px;
+          top: 0;
+          left: 0;
+          background-color: $color1;
+          border-radius: 8px;
+          transition: all .5s ; 
+          transform-origin: 0 0;
+          transform: scaleX(0);
+          z-index: -999;
+          border: none;
+        }
+      }
+}

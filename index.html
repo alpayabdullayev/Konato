@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/scss/main.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <div class="navbarSide">
+          <div class="top-nav d-flex justify-content-between align-items-center">
+            <div class="top-navLeft">
+              <div class="logo">
+                <img src="https://preview.colorlib.com/theme/konato/assets/img/logo/logo.png.webp" alt="" />
+              </div>
+              <div class="navbar-navs ms-4 d-md-flex d-none">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Property</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Blog</a>
+                <a href="#" class="nav-link">Contact</a>
+              </div>
+
+            </div>
+            <div class="top-navRight d-flex align-items-center ">
+              <a href="#" class="d-lg-block d-none">
+                Call Us:
+                <span>+10 (78) 356 3276</span>
+              </a>
+              <a href="#" class="ms-5 signin d-md-block d-none page-btn">Sign In</a>
+              <a href="#" class="burger ms-auto d-md-none  d-block">
+                <i class="fa-solid fa-bars fs-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <div class="bottom-nav">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <form action="#" class="search-form d-flex justify-content-between align-items-center flex-wrap gap-2">
+              <div class="search-input col-12 col-lg-6">
+                <input type="search" placeholder="Enter keyword.." />
+                <div class="search-icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+              <div class="select-form col-2 col-md-3 col-lg-1">
+                <select id="rents">
+                  <option>Rent</option>
+                  <option>Rent1</option>
+                  <option>Rent3</option>
+                  <option>Rent4</option>
+                </select>
+              </div>
+              <div class="select-form col-2 col-md-3 col-lg-1">
+                <select id="beds">
+                  <option>Bed</option>
+                  <option>Bed1</option>
+                  <option>Bed3</option>
+                  <option>bed4</option>
+                </select>
+              </div>
+              <div class="select-form col-2 col-md-3 col-lg-1">
+                <select id="bath">
+                  <option>Bath</option>
+                  <option>Bath1</option>
+                  <option>Bath2</option>
+                  <option>Bath3</option>
+                </select>
+              </div>
+              <div class="select-button col-12 col-md-6 col-lg-2">
+                <button type="submit" class="page-btn search col-lg-8 col-12">
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="hero">
+      <div class="container">
+        <div class="overlay"></div>
+        <div class="row" data-aos="fade-right" data-aos-duration="1500">
+          <div class="hero col-12 col-lg-10 ps-4 pt-5">
+            <span class="pb1">3 Bed - 2 Bath - 2200 Sq Ft</span>
+            <h1 class="pt-2 pb-2 fw-bold">Light House NY</h1>
+            <p class="pb-1">
+              Get started by choosing from one of our pre-built page templates
+              to showcase your properties
+            </p>
+            <p class="price pt-3 pb-3">$ 3,272</p>
+            <div class="pt-4">
+              <a href="#" class="page-btn left-to-right ">View Property</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section id="latest"  >
+      <div class="container">
+        <div class="TopTitle" data-aos="fade-up">
+          <h2>Display Latest & Featured Properties</h2>
+          <p>
+            Get started by choosing from one of our pre-built page templates
+            to showcase your properties
+          </p>
+        </div>
+        <div class="row">
+          <swiper-container class="mySwiper" pagination="true" pagination-clickable="false" 
+          navigation="true" space-between="20"
+          slides-per-view="3" >
+          <swiper-slide class="col-12 col-md-6 col-lg-4" data-aos="fade-up"data-aos="fade-up" data-aos-duration="1200">
+            <div class="latestCard">
+              <div class="card-img">
+                <img
+                  src="https://preview.colorlib.com/theme/konato/assets/img/gallery/items1.jpg.webp"
+                  alt="HomeImage" />
+              </div>
+              <div class="card-content">
+                <span>$ 6728</span>
+                <h5 class="pt-2 pb-3"><a href="#">Classic Home</a></h5>
+                <p class="pb-3">
+                  Get started by choosing from one of our pre-built page
+                  templates to showcase your properties
+                </p>
+              </div>
+              <div class="card-icons">
+                <div class="icon">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>Be</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>Be</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-building"></i>  
+                  <span>Sq ft</span>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos="fade-up" data-aos-duration="1500">
+            <div class="latestCard">
+              <div class="card-img">
+                <img
+                  src="https://preview.colorlib.com/theme/konato/assets/img/gallery/items2.jpg.webp" />
+              </div>
+              <div class="card-content">
+                <span>$ 6728</span>
+                <h5 class="pt-2 pb-3"><a href="#">Apartment Home</a></h5>
+                <p class="pb-3">
+                  Get started by choosing from one of our pre-built page
+                  templates to showcase br your properties
+                </p>
+              </div>
+              <div class="card-icons">
+                <div class="icon">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>Bed</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>Bath</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-building"></i>  
+                  <span>Sq</span>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1800">
+            <div class="latestCard">
+              <div class="card-img">
+                <img
+                  src="https://preview.colorlib.com/theme/konato/assets/img/gallery/items1.jpg.webp"
+                  alt="HomeImage" />
+              </div>
+              <div class="card-content">
+                <span>$ 6728</span>
+                <h5 class="pt-2 pb-3"><a href="#">Classic Home</a></h5>
+                <p class="pb-3">
+                  Get started by choosing from one of our pre-built page
+                  templates to showcase your properties
+                </p>
+              </div>
+              <div class="card-icons">
+                <div class="icon">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>Bed</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>Bath</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-building"></i>  
+                  <span>Sq</span>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="col-12 col-md-6 col-lg-4">
+            <div class="latestCard">
+              <div class="card-img">
+                <img
+                  src="https://preview.colorlib.com/theme/konato/assets/img/gallery/items1.jpg.webp"
+                  alt="HomeImage" />
+              </div>
+              <div class="card-content">
+                <span>$ 6728</span>
+                <h5 class="pt-2 pb-3"><a href="#">Classic Home</a></h5>
+                <p class="pb-3">
+                  Get started by choosing from one of our pre-built page
+                  templates to showcase your properties
+                </p>
+              </div>
+              <div class="card-icons">
+                <div class="icon">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>Bed</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>Bath</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-building"></i>  
+                  <span>Sq </span>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="col-12 col-md-6 col-lg-4">
+            <div class="latestCard">
+              <div class="card-img">
+                <img
+                  src="https://preview.colorlib.com/theme/konato/assets/img/gallery/items1.jpg.webp"
+                  alt="HomeImage" />
+              </div>
+              <div class="card-content">
+                <span>$ 6728</span>
+                <h5 class="pt-2 pb-3"><a href="#">Classic Home</a></h5>
+                <p class="pb-3">
+                  Get started by choosing from one of our pre-built page
+                  templates to showcase your properties
+                </p>
+              </div>
+              <div class="card-icons">
+                <div class="icon">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>Bedroom</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>Bedroom</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-building"></i>  
+                  <span>Sq ft</span>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+
+        </swiper-container>
+        </div>
+      </div>
+    </section>
+    <section id="help">
+      <div class="container">
+        <div class="TopTitle">
+          <h2>How we help people?</h2>
+        </div>
+        <div class="row justify-content-center align-items-center gap-0 p-0">
+          <div class="col-12 col-md-4 p-0">
+            <div class="helpCard">
+              <div class="helpCard-img">
+                <img
+                  src="https://preview.colorlib.com/theme/konato/assets/img/icon/services1.svg"
+                  alt="" />
+              </div>
+              <h5><a href="#">Sell home or office</a></h5>
+              <p>
+                Get started by choosing from one of our pre-built page
+                templates to showcase your properties
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 p-0 ">
+            <div class="helpCard">
+              <div class="helpCard-img">
+                <img
+                  src="https://preview.colorlib.com/theme/konato/assets/img/icon/services2.svg"
+                  alt="" />
+              </div>
+              <h5><a href="#">Sell home or office</a></h5>
+              <p>
+                Get started by choosing from one of our pre-built page
+                templates to showcase your properties
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 p-0">
+            <div class="helpCard">
+              <div class="helpCard-img">
+                <img
+                  src="https://preview.colorlib.com/theme/konato/assets/img/icon/services3.svg"
+                  alt="" />
+              </div>
+              <h5><a href="#">Sell home or office</a></h5>
+              <p>
+                Get started by choosing from one of our pre-built page
+                templates to showcase your properties
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sale">
+      <div class="container">
+        <div class="TopTitle" data-aos="fade-up">
+          <h2>Properties for Sale</h2>
+
+        </div>
+        <div class="row">
+          <swiper-container class="mySwiper" pagination="true" pagination-clickable="false" 
+          navigation="true" space-between="20"
+          slides-per-view="3" >
+          <swiper-slide class="col-12 col-md-6 col-lg-4" data-aos="fade-up"data-aos="fade-up" data-aos-duration="1200">
+            <div class="latestCard">
+              <div class="card-img">
+                <img
+                  src="https://preview.colorlib.com/theme/konato/assets/img/gallery/items1.jpg.webp"
+                  alt="HomeImage" />
+              </div>
+              <div class="card-content">
+                <span>$ 6728</span>
+                <h5 class="pt-2 pb-3"><a href="#">Classic Home</a></h5>
+                <p class="pb-3">
+                  Get started by choosing from one of our pre-built page
+                  templates to showcase your properties
+                </p>
+              </div>
+              <div class="card-icons">
+                <div class="icon">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>Be</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>Be</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-building"></i>  
+                  <span>Sq ft</span>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos="fade-up" data-aos-duration="1500">
+            <div class="latestCard">
+              <div class="card-img">
+                <img
+                  src="https://preview.colorlib.com/theme/konato/assets/img/gallery/items2.jpg.webp" />
+              </div>
+              <div class="card-content">
+                <span>$ 6728</span>
+                <h5 class="pt-2 pb-3"><a href="#">Apartment Home</a></h5>
+                <p class="pb-3">
+                  Get started by choosing from one of our pre-built page
+                  templates to showcase br your properties
+                </p>
+              </div>
+              <div class="card-icons">
+                <div class="icon">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>Bed</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>Bath</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-building"></i>  
+                  <span>Sq</span>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1800">
+            <div class="latestCard">
+              <div class="card-img">
+                <img
+                  src="https://preview.colorlib.com/theme/konato/assets/img/gallery/items1.jpg.webp"
+                  alt="HomeImage" />
+              </div>
+              <div class="card-content">
+                <span>$ 6728</span>
+                <h5 class="pt-2 pb-3"><a href="#">Classic Home</a></h5>
+                <p class="pb-3">
+                  Get started by choosing from one of our pre-built page
+                  templates to showcase your properties
+                </p>
+              </div>
+              <div class="card-icons">
+                <div class="icon">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>Bed</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>Bath</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-building"></i>  
+                  <span>Sq</span>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="col-12 col-md-6 col-lg-4">
+            <div class="latestCard">
+              <div class="card-img">
+                <img
+                  src="https://preview.colorlib.com/theme/konato/assets/img/gallery/items1.jpg.webp"
+                  alt="HomeImage" />
+              </div>
+              <div class="card-content">
+                <span>$ 6728</span>
+                <h5 class="pt-2 pb-3"><a href="#">Classic Home</a></h5>
+                <p class="pb-3">
+                  Get started by choosing from one of our pre-built page
+                  templates to showcase your properties
+                </p>
+              </div>
+              <div class="card-icons">
+                <div class="icon">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>Bed</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>Bath</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-building"></i>  
+                  <span>Sq </span>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="col-12 col-md-6 col-lg-4">
+            <div class="latestCard">
+              <div class="card-img">
+                <img
+                  src="https://preview.colorlib.com/theme/konato/assets/img/gallery/items1.jpg.webp"
+                  alt="HomeImage" />
+              </div>
+              <div class="card-content">
+                <span>$ 6728</span>
+                <h5 class="pt-2 pb-3"><a href="#">Classic Home</a></h5>
+                <p class="pb-3">
+                  Get started by choosing from one of our pre-built page
+                  templates to showcase your properties
+                </p>
+              </div>
+              <div class="card-icons">
+                <div class="icon">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>Bedroom</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>Bedroom</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-building"></i>  
+                  <span>Sq ft</span>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+
+        </swiper-container>
+        </div>
+      </div>
+    </section>
+
+    <section id="explore" class="exploreSect">
+      <div class="container">
+        <div class="exploreSection">
+          <div class="row align-items-center">
+            <div class="col-xl-4">
+              <div class="exploreTitle">
+                <h2>Explore <br>
+                  by Property Type
+                </h2>
+                <p class="pb-3">Get started by choosing from one of our pre-built page templates to showcase your properties
+
+                </p>
+                <div class="pb-5">
+                   <a href="#" class="page-btn left-to-right ">View Property</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-0 card-home">
+              <div class="single-cat text-center mb-10">
+                <div class="cat-icon">
+                <img src="https://preview.colorlib.com/theme/konato/assets/img/icon/property1.svg" alt="">
+                </div>
+                <div class="cat-cap pt-3">
+                <h5><a href="#">Home ; Appartment</a></h5>
+                </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-0 card-home">
+              <div class="single-cat text-center mb-10">
+                <div class="cat-icon">
+                <img src="https://preview.colorlib.com/theme/konato/assets/img/icon/property2.svg" alt="">
+                </div>
+                <div class="cat-cap pt-3">
+                <h5><a href="#">Villa</a></h5>
+                </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-0 card-home">
+              <div class="single-cat text-center mb-10">
+                <div class="cat-icon">
+                <img src="https://preview.colorlib.com/theme/konato/assets/img/icon/property3.svg" alt="">
+                </div>
+                <div class="cat-cap pt-3">
+                <h5><a href="#">Studio</a></h5>
+                </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 p-0 card-home">
+              <div class="single-cat text-center mb-10">
+                <div class="cat-icon">
+                <img src="https://preview.colorlib.com/theme/konato/assets/img/icon/property4.svg" alt="">
+                </div>
+                <div class="cat-cap pt-3">
+                <h5><a href="#">Office</a></h5>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="agents" class="ourAgents">
+      <div class="container">
+        <div class="agentsSect">
+          <div class="TopTitle" data-aos="fade-up">
+            <h2 class="pb-3">Our Agents</h2>
+            <p>
+              Get started by choosing from one of our pre-built page templates to showcase your properties
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 col-xl-3 card-agents">
+              <div class="card-img">
+                <img src="https://preview.colorlib.com/theme/konato/assets/img/gallery/team4.jpg.webp" alt="">
+                <div class="layer row d-flex flex-row justify-content-evenly align-items-center gap-2">
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                  <a href=""><i class="fa-brands fa-instagram" style="color: #a31fe0;"></i></a>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+              </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 card-agents">
+              <div class="card-img">
+                <img src="https://preview.colorlib.com/theme/konato/assets/img/gallery/team1.jpg.webp" alt="">
+                <div class="layer row d-flex flex-row justify-content-evenly align-items-center gap-2">
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                  <a href=""><i class="fa-brands fa-instagram" style="color: #a31fe0;"></i></a>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 card-agents">
+              <div class="card-img">
+                <img src="https://preview.colorlib.com/theme/konato/assets/img/gallery/team3.jpg.webp" alt="">
+                <div class="layer row d-flex flex-row justify-content-evenly align-items-center gap-2">
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                  <a href=""><i class="fa-brands fa-instagram" style="color: #a31fe0;"></i></a>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+              </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 card-agents">
+              <div class="card-img">
+                <img src="https://preview.colorlib.com/theme/konato/assets/img/gallery/team2.jpg.webp" alt="">
+                <div class="layer row d-flex flex-row justify-content-evenly align-items-center gap-2">
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                  <a href=""><i class="fa-brands fa-instagram" style="color: #a31fe0;"></i></a>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+              </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper ('.swiper-container', {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      breakpoints: {
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        }
+      },
+        
+  
+  
+    })
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+
+</html>

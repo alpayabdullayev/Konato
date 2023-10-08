@@ -1,0 +1,67 @@
+@use '../abstracts/variable' as *;
+
+@mixin cards{
+    .latestCard {
+        .card-img {
+          overflow: hidden;
+        }
+        img {
+          transition: all 0.5s ease;
+          object-fit: cover;
+          width: 100%;
+        }
+        &:hover img {
+          transition: all 0.5s ease;
+          transform: scale(1.1);
+        }
+        .card-content {
+          border: 1px solid $colorBorder;
+          padding: 30px 20px 15px 20px;
+          span {
+            color: $colorInfo;
+          }
+          a {
+            font-size: 1.2rem;
+            color: $color000;
+          }
+          p {
+            color: $color5e;
+            line-height: 1.6;
+          }
+        }
+        .card-icons {
+          border: 1px solid $colorBorder;
+          padding-top: 20px;
+          padding-bottom: 22px;
+          padding-left: 25px;
+          padding-right: 25px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .icon {
+            .fa-solid,  span {
+              color: #212529;
+              font-size: 16px; 
+            }
+          }
+        }
+      }
+    
+    
+    @media only screen and (max-width: 600px) {
+        .latestCard{
+          min-width: 100%;
+          width: 200px;
+        }
+        .card-content{
+          font-size: 12px;
+          
+        }
+        .card-icons{
+          .fa-solid ,span {
+            font-size: 2px;
+          }
+        }
+    }
+    
+}
