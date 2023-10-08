@@ -1,5 +1,7 @@
 @use '../abstracts/variable' as *;
 
+
+// cards mixin components
 @mixin cards{
     .latestCard {
         .card-img {

@@ -596,4 +596,11 @@ header .bottom-nav .search-form .select-form select {
 #agents .layer:hover a {
   bottom: 21%;
   opacity: 1;
+}
+
+#subscribe {
+  padding: 40px 0;
+}
+#subscribe .leftSect {
+  background-color: #004274;
 }/*# sourceMappingURL=main.css.map */

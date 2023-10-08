@@ -5,19 +5,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+
+  <!-- Bootstrap link -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- main.css -->
   <link rel="stylesheet" href="./assets/scss/main.css" />
 </head>
 
 <body>
+  <!-- header start -->
   <header>
     <nav>
       <div class="container">
@@ -97,7 +103,10 @@
       </div>
     </div>
   </header>
+   <!-- header end -->
+   <!-- main start -->
   <main>
+    <!-- hero section start -->
     <section id="hero">
       <div class="container">
         <div class="overlay"></div>
@@ -118,6 +127,8 @@
         </div>
       </div>
     </section>
+    <!-- hero section end -->
+    <!-- latest section start -->
     <section id="latest"  >
       <div class="container">
         <div class="TopTitle" data-aos="fade-up">
@@ -290,6 +301,8 @@
         </div>
       </div>
     </section>
+    <!-- latest section end -->
+    <!-- help section start -->
     <section id="help">
       <div class="container">
         <div class="TopTitle">
@@ -341,7 +354,8 @@
         </div>
       </div>
     </section>
-
+    <!-- help section end -->
+    <!-- sale section start  -->
     <section id="sale">
       <div class="container">
         <div class="TopTitle" data-aos="fade-up">
@@ -511,7 +525,9 @@
         </div>
       </div>
     </section>
+    <!-- sale section end  -->
 
+    <!-- explore section start -->
     <section id="explore" class="exploreSect">
       <div class="container">
         <div class="exploreSection">
@@ -574,7 +590,9 @@
       </div>
 
     </section>
+     <!-- explore section end -->
 
+     <!-- agents section start -->
     <section id="agents" class="ourAgents">
       <div class="container">
         <div class="agentsSect">
@@ -636,9 +654,14 @@
         </div>
       </div>
     </section>
+    <!-- agents section start -->
+
 
   </main>
-  
+  <!-- main end -->
+
+
+  <!-- swipper js scripts -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
   <script>
     var swiper = new Swiper ('.swiper-container', {
@@ -659,6 +682,7 @@
   
     })
   </script>
+  <!-- aos library scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
 </body>

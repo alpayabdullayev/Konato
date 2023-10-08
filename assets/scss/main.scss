@@ -1,9 +1,12 @@
+// base scss
 @use './base/index' as *;
+// abstract
+@use './abstracts/index' as *;
+// layout scss
 @use './layout/index' as *;
-
+// components  scss
 @use"./components/index" as *;
-
-
+// pages scss
 @use"./pages/index" as *;
 
 
