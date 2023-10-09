@@ -18,6 +18,13 @@
     }
 }
 
+@mixin full-height{
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+}
+
+
 // hero section
 #hero{
     background-image: url(https://preview.colorlib.com/theme/konato/assets/img/hero/h1_hero1.jpg.webp);
@@ -44,16 +51,16 @@
         z-index: 1;
         color: #fff;
         h1 {
-          font-size: 3.75rem;
+          font-size: 38px;
           font-weight: 500;
           line-height: 1.5;
         }
         p {
-          font-size: 1.2rem;
+          font-size: 18px;
           width: 62%;
         }
         .price {
-          font-size: 2.5rem;
+          font-size: 32px;
         }
       }
 }
@@ -120,7 +127,7 @@
         color: $colorInfo;
       }
       a {
-        font-size: 1.2rem;
+        font-size: 20px;
         color: $color000;
       }
       p {
@@ -246,7 +253,7 @@
         color: $colorInfo;
       }
       a {
-        font-size: 1.2rem;
+        font-size: 20px;
         color: $color000;
       }
       p {
@@ -419,8 +426,56 @@
 // subscribe section
 #subscribe{
   padding: 40px 0;
-  .leftSect{
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .subscribe-left{
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+    // align-items: center;
+    flex-direction: column;
+    color: #fff;
     background-color: $color1;
+    h2{
+      color: #fff;
+      font-size: 38px;
+      display: block;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 8px;
+      text-transform: capitalize;
+    }
+    p {
+      color: #ffff;
+      line-height: 1.7;
+      font-size: 18px;
+    }
+    input {
+      padding-bottom: 10px;
+      background: 0;
+      border: 0;
+      border-bottom: 2px solid #fff;
+      &::placeholder {
+        color: #fff;
+      }
+      &:focus {
+        outline: 0;
+        color: #fff;
+      }
+    }
+  }
+  .subscribe-right{
+    background-image: url(https://preview.colorlib.com/theme/konato/assets/img/gallery/subscribe-img.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    height: 100%;
+    max-width: 100%;
+
   }
 }
 

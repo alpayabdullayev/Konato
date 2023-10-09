@@ -1,0 +1,54 @@
+// use
+@use '../abstracts/variable' as *;
+// footer
+#footer{
+    padding: 5px 0;
+    .footercContent {
+        .logo{
+            max-width: 100%;
+        }
+      }
+      .phone {
+        font-size: 25px;
+        font-weight: 600;
+        color:$color1;
+        text-decoration: underline; 
+      }
+
+      ul {
+        li {
+          padding-top: 8px;
+          a {
+            color: #ccc;
+            padding-top: 8px;
+            cursor: pointer;
+            .fa-brands{
+                background-color: $colorInfo;
+                padding: 10px;
+                border-radius: 50%;
+                transition: all 0.5s ease;
+                &:hover{
+                    color: $colorWhite;
+                    transition: all 0.5s ease;
+                }
+            }
+          }
+        }
+      }
+      .footerBottom {
+        padding: 10px 0;
+        text-align: center;
+        color:$color000;
+        }
+
+    //   @media only screen and (max-width: 600px) {
+    //     #footer{
+    //         .row{
+    //             text-align: center;
+    //             padding-left: 300px;
+    //         }
+
+    //     }
+        
+    //   }
+}

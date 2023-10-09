@@ -167,6 +167,42 @@ header .bottom-nav .search-form .select-form select {
   padding: 10px;
 }
 
+#footer {
+  padding: 5px 0;
+}
+#footer .footercContent .logo {
+  max-width: 100%;
+}
+#footer .phone {
+  font-size: 25px;
+  font-weight: 600;
+  color: #004274;
+  text-decoration: underline;
+}
+#footer ul li {
+  padding-top: 8px;
+}
+#footer ul li a {
+  color: #ccc;
+  padding-top: 8px;
+  cursor: pointer;
+}
+#footer ul li a .fa-brands {
+  background-color: #00aeff;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+#footer ul li a .fa-brands:hover {
+  color: #fff;
+  transition: all 0.5s ease;
+}
+#footer .footerBottom {
+  padding: 10px 0;
+  text-align: center;
+  color: #000;
+}
+
 .page-btn {
   padding: 12px 23px;
   border-radius: 8px;
@@ -263,16 +299,16 @@ header .bottom-nav .search-form .select-form select {
   color: #fff;
 }
 #hero .hero h1 {
-  font-size: 3.75rem;
+  font-size: 38px;
   font-weight: 500;
   line-height: 1.5;
 }
 #hero .hero p {
-  font-size: 1.2rem;
+  font-size: 18px;
   width: 62%;
 }
 #hero .hero .price {
-  font-size: 2.5rem;
+  font-size: 32px;
 }
 
 #latest {
@@ -297,6 +333,12 @@ header .bottom-nav .search-form .select-form select {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+#latest .swiper-button-next {
+  right: 1.3rem;
+}
+#latest .swiper-button-prev {
+  right: 3rem;
 }
 #latest .TopTitle, #latest #agents, #latest #sale {
   text-align: center;
@@ -342,7 +384,7 @@ header .bottom-nav .search-form .select-form select {
   color: #00aeff;
 }
 #latest .latestCard .card-content a, #latest #sale .card-content a {
-  font-size: 1.2rem;
+  font-size: 20px;
   color: #000;
 }
 #latest .latestCard .card-content p, #latest #sale .card-content p {
@@ -446,6 +488,12 @@ header .bottom-nav .search-form .select-form select {
   height: 100%;
   object-fit: cover;
 }
+#sale .swiper-button-next {
+  right: 1.3rem;
+}
+#sale .swiper-button-prev {
+  right: 3rem;
+}
 #sale .latestCard .card-img, #sale #sale .card-img {
   overflow: hidden;
 }
@@ -466,7 +514,7 @@ header .bottom-nav .search-form .select-form select {
   color: #00aeff;
 }
 #sale .latestCard .card-content a, #sale #sale .card-content a {
-  font-size: 1.2rem;
+  font-size: 20px;
   color: #000;
 }
 #sale .latestCard .card-content p, #sale #sale .card-content p {
@@ -601,6 +649,52 @@ header .bottom-nav .search-form .select-form select {
 #subscribe {
   padding: 40px 0;
 }
-#subscribe .leftSect {
+#subscribe .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+#subscribe .subscribe-left {
+  display: flex;
+  justify-content: center;
+  padding-left: 40px;
+  flex-direction: column;
+  color: #fff;
   background-color: #004274;
+}
+#subscribe .subscribe-left h2 {
+  color: #fff;
+  font-size: 38px;
+  display: block;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+#subscribe .subscribe-left p {
+  color: white;
+  line-height: 1.7;
+  font-size: 18px;
+}
+#subscribe .subscribe-left input {
+  padding-bottom: 10px;
+  background: 0;
+  border: 0;
+  border-bottom: 2px solid #fff;
+}
+#subscribe .subscribe-left input::placeholder {
+  color: #fff;
+}
+#subscribe .subscribe-left input:focus {
+  outline: 0;
+  color: #fff;
+}
+#subscribe .subscribe-right {
+  background-image: url(https://preview.colorlib.com/theme/konato/assets/img/gallery/subscribe-img.jpg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  height: 100%;
+  max-width: 100%;
 }/*# sourceMappingURL=main.css.map */
